@@ -3,22 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>模块示例</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+    <title>AMD + requirejs 模块示例</title>
+    <script data-main="main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
 </head>
 <style>
 </style>
 <body>
     <div id="fu-component"></div>
 </body>
-<script src="./fu-component.js"></script>
-<script>
-    var myComponent = new FuComponent({
-        name: 'Dengdeng'
-    });
-    myComponent.renderDom(document.getElementById('fu-component'));
-    myComponent.init();
-</script>
 </html>
 
