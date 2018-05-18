@@ -1,7 +1,7 @@
 {
   "name": "fu-component",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.4.0",
+  "description": "A demo for JavaScript Module",
   "main": "fu-component.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/fund-ui/fu-component.git"
   },
-  "author": "",
+  "author": "Turkyden",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fund-ui/fu-component/issues"

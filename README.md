@@ -1,7 +1,13 @@
-# fu-component
+# JavaScript 几种模块化方案
 
-## 安装包示例
+## 安装示例
 
 ``` npm
-npm i fu-component
+    npm i fu-component
+```
+
+## es6 编译
+
+``` npm
+    npm run dev
 ```
