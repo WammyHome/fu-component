@@ -38,12 +38,17 @@
                 var tag = '<div class="fu-component">';
                     tag += '<h1>Welcome to FunUI !</h1>';
                     tag += '<h2>Hi, i am a fu-component !</h2>';
+                    tag += '<button id="btn_sayHello">Hello</button>';
                     tag += '</div>';
                 dom.innerHTML = tag;
             },
             // 公有方法-初始化
             init: function () {
                 console.log(this._getConfig(this.config));
+                var btn_dom = document.getElementById('btn_sayHello');
+                btn_dom.addEventListener('click', function() {
+                    alert('hi i am alert for es5');
+                })
             },
             // 共有方法-打个招呼
             sayHello: function (name) {

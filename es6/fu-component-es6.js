@@ -18,12 +18,17 @@ class FuComponent {
         let tag =   `<div class="fu-component">
                         <h1>Welcome to FunUI !</h1>
                         <h2>Hi, i am a fu-component !</h2>
+                        <button id="btn_sayHello">Hello</button>
                     </div>`;
         dom.innerHTML = tag;        
     }
     // 公有方法-初始化
     init() {
         console.log(this._getConfig(this.config));
+        let btn_dom = document.getElementById('btn_sayHello');
+        btn_dom.addEventListener('click', () => {
+            alert('hi i am alert from es6');
+        })
     }
     // 共有方法-打个招呼
     sayHello(name) {
