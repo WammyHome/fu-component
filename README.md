@@ -11,3 +11,11 @@
 ``` npm
     npm run dev
 ```
+
+## API
+
+Name | Type | Return |
+---- | ---- | ----: |
+setName | func | void |
+getName | func | String |
+sayHello | func | void |
