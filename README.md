@@ -42,7 +42,7 @@ require(['jquery','fu-component'], function($, fc){
 
 ```
 
-> Tips: 目前我们在 `FundManagement` 和 `Wise` 中大量使用`AMD`的模块化加载方案，把页面上的大量js代码拆分成逻辑接近的模块，再从页面入口`main.js`消费这些实现抽象定义好的模块。
+> Tips: 目前我们在 `FundManagement` 和 `Wise` 项目中大量使用`AMD`的模块化加载方案，把页面上的大量js代码拆分成逻辑接近的模块，再从页面入口`main.js`消费这些实现抽象定义好的模块。
 
 ### 1.2 CMD
 
@@ -243,9 +243,9 @@ fc.greet(); // > Fucking Awesome! Dengdeng
 <script src="./fu-component.js"></script>
 <script>
     var myComponent = new FuComponent();
-    myComponent.renderDom(document.getElementById('fu-component'));
-    myComponent.init();
-    myComponent.sayHello('DengDeng');
+        myComponent.renderDom(document.getElementById('fu-component'));
+        myComponent.init();
+        myComponent.sayHello('DengDeng');
 </script>
 </html>
 ```
