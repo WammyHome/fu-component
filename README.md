@@ -88,14 +88,14 @@ seajs.use(['jquery-12.1.3.js','fu-component.js'], function($, fc){
 
 ``` js
 // fu-Component.js
-var FundComponent = {
+var FuComponent = {
     greet: function() {
         // 此处alert无法使用，因为nodejs环境中没有window对象，而alert() 其实是 window.alert()
         // alert('Fucking Awesome! Dengdeng');
         console.log('Fucking Awesome! Dengdeng');
     }
 }
-module.exports = FundComponent; 
+module.exports = FuComponent; 
 ```
 
 - 加载模块
@@ -128,7 +128,7 @@ fc.greet();
 
 ``` js
 // fu-Component.js
-var FundComponent = {
+var FuComponent = {
     greet: function() {
         console.log('Fucking Awesome! Dengdeng');
     }
@@ -158,7 +158,7 @@ fc.greet(); // > Fucking Awesome! Dengdeng
 - 声明组件
 
 ``` js
-// fundComponent.js
+// FuComponent.js
 ; (function (global) {
     // 模块兼容写法
     if (typeof module !== 'undefined' && typeof exports === 'object') {
